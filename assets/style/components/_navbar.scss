@@ -1,0 +1,32 @@
+.navbar-component {
+    position: sticky;
+    button {
+        color: $white;
+        transition: 0.2s;
+        position: relative;
+        // background: red;
+        &:hover {
+            color: $accent !important;
+            transform: translateY(-0.25rem);
+        }
+        .chevron {
+            position: absolute;
+            bottom: -0.5rem;
+        }
+    }
+}
+
+
+.slide-enter-active {
+    transition: all 0.2s;
+}
+
+.slide-leave-active {
+    transition: all 0.2s;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+    transform: translateY(-1.5rem);
+    opacity: 0;
+}

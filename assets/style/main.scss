@@ -1,0 +1,89 @@
+@import '~/assets/style/variables/colors.scss';
+
+@import '~/assets/style/components/homepage.scss';
+@import '~/assets/style/components/navbar.scss';
+
+
+body {
+    background: $dark;
+    font-family: "Outfit";
+}
+* {
+    scroll-behavior: smooth;
+}
+
+.section {
+    color: $white;
+    &:not(:first-child) {
+        padding-top: 7rem;
+    }
+}
+
+
+.home-section {
+    height: 100vh;
+    background-image: url('~/assets/image/homescreen_bg.png');
+    background-size: cover;
+    background-position: center;
+    // .backdrop {
+    //     position: absolute;
+    //     z-index: -1;
+    // }
+    .person {
+        position: absolute;
+        bottom: 0;
+        right: 8rem;
+        height: 80%;
+        z-index: 1;
+    }
+    .circles {
+        mix-blend-mode: color-dodge;
+        position: absolute;
+        bottom: 10rem;
+        width: 40%;
+        right: 4rem;
+    }
+}
+
+.about-section { 
+    height: 100vh;
+    position: relative;
+    .backdrop {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        opacity: 10%;
+        filter: sepia(100%) hue-rotate(90deg) saturate(400%);
+    }
+}
+
+.navbar-component {
+    padding: 2rem 0 
+}
+
+.hided-navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    button:hover {
+        margin-bottom: 0;
+    }
+}
+
+.fade-enter-active {
+    transition: opacity 0.5s ease;
+    transition-delay: 0.25s;
+}
+.fade-leave-active {
+    transition: opacity 0s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
