@@ -8,4 +8,46 @@
             width: 1.5rem;
         }
     }
+    .body-text {
+        height: 100%;
+        padding: 6rem 8rem;
+        .body-wrapper {
+            width: fit-content;
+            position: relative;
+            .shadow {
+                box-shadow: none;
+                mix-blend-mode: overlay;
+                transform: scale(1.5) translateX(3.5rem);
+                position: absolute;
+            }
+            .text-wrapper h1 {
+                font-size: 4rem;
+                line-height: 81px;
+                font-weight: 600;
+            }
+            hr {
+                border: 3px solid $accent;
+                border-radius: 5px;
+                width: 10rem;
+            }
+            .desc p {
+                font-size: 1.5rem;
+                font-weight: 400;
+                span {
+                    color: $accent;
+                    font-weight: 600;
+                }
+            }
+            button {
+                background: $accent;
+                width: fit-content;
+                padding: 1rem 3rem;
+                color: $dark;
+                font-weight: 500;
+                font-size: 1rem;
+                border-radius: 10rem;
+            }
+        }
+        
+    }
 }
