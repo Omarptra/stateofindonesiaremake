@@ -1,0 +1,13 @@
+.about-section {
+    min-height: 50vh;
+
+    
+    p {
+        line-height: 1.75em;
+        letter-spacing: 1px;
+        span {
+            font-weight: 700;
+            color: $accent;
+        }
+    }
+}

@@ -16,6 +16,9 @@
     }
 }
 
+.active-link {
+    color: $accent !important;
+}
 
 .slide-enter-active {
     transition: all 0.2s;
