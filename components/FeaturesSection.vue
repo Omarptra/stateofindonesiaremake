@@ -1,5 +1,5 @@
 <template>
-    <div class="section features-section flex flex-col items-center gap-16 px-32">
+    <div class="section features-section gap-16 px-32">
       <NuxtImg class="backdrop" src="backgrounds/bg_features.png" />
       <div class="section-header flex flex-col gap-4">
         <h1>Server Features</h1>

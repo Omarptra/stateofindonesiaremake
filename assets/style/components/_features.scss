@@ -2,31 +2,14 @@
     height: 100vh;
     // background-image: url("~/assets/image/backgrounds/bg_features.png");
     // background-blend-mode: multiply;
-    img {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        z-index: -1;
-        mix-blend-mode: overlay;
-    }
+
     .features-container {
-        width: 60vw;
+        // min-width: 60vw;
         flex-wrap: wrap;
         justify-content: center;
     }
     .feature-wrapper {
-        background: #f8f8f810;
-        border: 1px solid #f8f8f825;
-        backdrop-filter: blur(25px);
-        border-radius: 1.5rem;
-        padding: 2rem;
         width: 18.75rem;
-        .image-wrapper {
-            background: $accent;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-        }
         .body {
             h1 {
                 font-size: 1.5rem;
@@ -43,7 +26,6 @@
                 font-weight: 400;
                 opacity: 50%;
                 line-height: 1.5em;
-                // letter-spacing: 1px;
             }
         }
     }

@@ -1,0 +1,28 @@
+.spec-wrapper {
+    width: 21.75rem;
+    .title {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    hr {
+        border: 3px solid $accent;
+        border-radius: 3px;
+        width: 40%;
+    }
+    .spec-list {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        h1 {
+            opacity: 50%;
+        }
+        p, .spec-item-wrapper p {
+            font-weight: 500;
+        }
+        .spec-item-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+}

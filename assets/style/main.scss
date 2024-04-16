@@ -5,6 +5,7 @@
 @import '~/assets/style/components/homepage.scss';
 @import '~/assets/style/components/about.scss';
 @import '~/assets/style/components/features.scss';
+@import '~/assets/style/components/specs.scss';
 
 // components
 @import '~/assets/style/components/navbar.scss';
@@ -18,27 +19,53 @@ body {
     font-family: "Outfit";
 }
 
+.about-section, .testimonials-section {
+    height: 50vh;
+}
+
 .section {
     color: $white;
-    &:not(:first-child, .about-section) {
-        padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:not(.home-section, .about-section, .testimonials-section ) {
+        height: 100vh;
+        align-items: center;
+    }
+    .backdrop {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        mix-blend-mode: overlay;
     }
     .section-header {
+        width: fit-content;
         h1 {
             font-size: 3rem;
             font-weight: 600;
             line-height: 1.25em;
         }
         hr {
-            width: 6.25rem;
+            width: 45%;
             border: 3px solid $accent;
             border-radius: 1em;
         }
     }
 }
 
-.navbar-component {
-    padding: 2rem 0 
+.spec-wrapper, .feature-wrapper {
+    background: #f8f8f810;
+    border: 1px solid #f8f8f825;
+    backdrop-filter: blur(25px);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    .image-wrapper {
+        background: $accent;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
 }
 
 .hided-navbar {

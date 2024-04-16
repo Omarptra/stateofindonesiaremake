@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/image",
     "@vueuse/nuxt",
-    "nuxt-anchorscroll",
-    "@pinia/nuxt"
+    "@pinia/nuxt",
+    "@nuxt/content",
   ]
 })

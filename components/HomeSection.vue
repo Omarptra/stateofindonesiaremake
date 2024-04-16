@@ -2,7 +2,7 @@
   const socialImages = ["instagram.svg", "discord.svg", "tiktok.svg", "youtube.svg"]
 </script>
 <template>
-    <div class="section home-section flex flex-col justify-between">
+    <div class="section home-section justify-between">
       <NuxtImg class="person" src="person.png"/>
       <NuxtImg class="circles" src="circle_group.svg"/>
       <div class="header flex justify-between px-32 py-9">
@@ -26,6 +26,6 @@
           <button>Begin to play</button>
         </div>
       </div>
-      <Navbar />
+      <Navbar class="main-navbar py-8" />
     </div>
 </template>

@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <div class="navbar-component flex gap-4 py-6 items-center justify-center">  
+    <div class="navbar-component flex gap-4 items-center justify-center">  
         <button class="link-wrapper flex flex-col items-center px-2 py-3" 
             v-for="menu of menus"
             :key="menu.name" 
