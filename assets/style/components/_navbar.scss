@@ -1,18 +1,15 @@
 .navbar-component {
-    position: sticky;
     backdrop-filter: blur(8px);
     background: #040F1410;
     width: 100%;
     button {
         color: $white;
         transition: 0.2s;
-        position: relative;
         &:hover {
             color: $accent !important;
             transform: translateY(-0.25rem);
         }
         .chevron {
-            position: absolute;
             bottom: -0.5rem;
         }
     }

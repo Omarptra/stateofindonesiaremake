@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    dir: "assets/image"
+    dir: "public"
   },
   pinia: {
     storesDirs: ['./composables/**'],

@@ -14,19 +14,12 @@
 </script>
 
 <template>
-    <div class="navbar-component flex gap-4 items-center justify-center">  
-        <button class="link-wrapper flex flex-col items-center px-2 py-3" 
-            v-for="menu of menus"
-            :key="menu.name" 
-            @mouseenter="hoveredLink = menu.href" 
-            @mouseleave="hoveredLink = null" 
-            @click="scrollTo(menu.href)"
-        >
+    <div class="navbar-component flex gap-4 items-center justify-center sticky">  
+        <button class="link-wrapper flex flex-col items-center px-2 py-3 relative" v-for="menu of menus" :key="menu.name" @mouseenter="hoveredLink = menu.href" @mouseleave="hoveredLink = null" @click="scrollTo(menu.href)">
             <span>{{ menu.name }}</span>
             <Transition name="slide">
-                <NuxtImg class="chevron" v-if="hoveredLink === menu.href" src="chevron.svg" width="24px" />
-            </Transition>
-            
+                <NuxtImg class="chevron absolute" v-if="hoveredLink === menu.href" src="chevron.svg" width="24px" />
+            </Transition>            
         </button>               
     </div>
 </template>

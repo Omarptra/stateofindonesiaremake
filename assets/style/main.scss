@@ -17,6 +17,28 @@
 body {
     background: $dark;
     font-family: "Outfit";
+    overflow-x: hidden;
+}
+
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    img {
+        width: 8vw;
+    }
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $accent;
+        letter-spacing: 12px;
+        margin-right: -12px;
+        text-align: right;
+    }
 }
 
 .about-section, .testimonials-section {
@@ -39,17 +61,17 @@ body {
         z-index: -1;
         mix-blend-mode: overlay;
     }
+    .section-header hr, .body-wrapper hr {
+        width: 45%;
+        border: 3px solid $accent;
+        border-radius: 1em;
+    }
     .section-header {
         width: fit-content;
         h1 {
             font-size: 3rem;
             font-weight: 600;
             line-height: 1.25em;
-        }
-        hr {
-            width: 45%;
-            border: 3px solid $accent;
-            border-radius: 1em;
         }
     }
 }
@@ -89,5 +111,14 @@ body {
 
 .fade-enter-from,
 .fade-leave-to {
+  opacity: 0;
+}
+
+.loading-leave-active {
+    transition: opacity 0.5s;
+}
+
+.loading-enter-from,
+.loading-leave-to {
   opacity: 0;
 }

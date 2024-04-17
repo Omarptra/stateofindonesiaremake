@@ -1,13 +1,5 @@
 .features-section {
     height: 100vh;
-    // background-image: url("~/assets/image/backgrounds/bg_features.png");
-    // background-blend-mode: multiply;
-
-    .features-container {
-        // min-width: 60vw;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .feature-wrapper {
         width: 18.75rem;
         .body {
@@ -15,11 +7,6 @@
                 font-size: 1.5rem;
                 font-weight: 600;
                 line-height: 1.25em;
-            }
-            hr {
-                border: 3px solid $accent;
-                border-radius: 3px;
-                width: 40%;
             }
             p {
                 font-size: 1rem;
